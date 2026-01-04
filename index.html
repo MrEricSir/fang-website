@@ -32,6 +32,17 @@ h1 {
 	font-size: 2em;
 }
 
+h1 {
+	font-weight: normal;
+	font-style: normal;
+	
+    text-align:center;
+    position:relative;
+   
+   	font-family: Sans-Serif;
+	font-size: 1.8em;
+}
+
 .highlight {
 	background-color: #ff0;
 }
@@ -45,27 +56,48 @@ h1 {
 </head>
 <body>
 
-
 <div id="container">
 <br />
 <img src="fang.png" width="425" height="232" /><br clear="all" />
 
+<h2>Feed on news</h2>
+
 <p>Fang helps you stay up to date with your favorite news websites and blogs.</p>
 
-<p>Currently Fang is in an <span class="highlight">early alpha test.</span> Download a package for your platform if you'd like to help test it.</p>
+<p>Currently Fang is in an <span class="highlight">early beta test.</span> Download a package for your platform if you'd like to help test it.</p>
 
-<h1>Downloads</h1>
+<h1>Fang 0.2.9-beta</h1>
+
+<h2>Download</h2>
 
 <ul>
-<li><a href="http://download.getfang.com/Fang.msi">Windows</a></li>
-<li><a href="http://download.getfang.com/Fang.dmg">Mac OS X</a></li>
-<li><a href="http://download.getfang.com/Fang-armv7.apk">Android ARMv7</a></li>
+	<li><a href="https://github.com/MrEricSir/Fang/releases/download/v0.2.9-beta.1/Fang.msi">Windows</a></li>
+	<li><a href="https://github.com/MrEricSir/Fang/releases/download/v0.2.9-beta.1/Fang.dmg">macOS</a></li>
+	<li><a href="https://github.com/MrEricSir/Fang/releases/download/v0.2.9-beta.1/Fang.AppImage">Linux (AppImage)</a></li>
+	<li><a href="https://github.com/MrEricSir/Fang/archive/refs/tags/v0.2.9-beta.1.zip">Source code</a></li>
+</ul>
+
+<h2>Changelog</h2>
+
+<ul>
+	<li>New build system with packages for Windows, macOS, and Linux</li>
+	<li>Refreshed UI</li>
+	<li>Feeds can be organized into folders</li>
+	<li>Option to follow the system's light or dark mode</li>
+	<li>System tray icon support on Windows</li>
+	<li>Context menus for feeds</li>
+	<li>More reliable web UI</li>
+	<li>Support for automatically re-discovering feed URL if it changed on the server</li>
+	<li>Ported to Qt 6</li>
+	<li>Fixed single instance check</li>
+	<li>Numerous bugs and crashes fixed</li>
+	<li>Unit tests and code coverage report added</li>
 </ul>
 
 <h1>Bugs</h1>
 
-<p>View existing tickets at <a href="https://trello.com/b/UaFwWYhd/fang">Fang's Trello board.</a>  To submit a bug report, feature request, or suggestion send an email to <a href="mailto:bugs@getfang.com">bugs@getfang.com</a></p>
-
+<p>Found a bug? File a ticket on <a href="(https://github.com/MrEricSir/Fang/issues">the issue tracker</a></p>.
+	
 <br /><br />
 
 <p id="copyright">Copyright 2025 Eric Gregory. All rights reserved. No warranty is expressed or implied.</p>
