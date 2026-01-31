@@ -1,0 +1,12 @@
+title: Fang
+description: Fang helps you stay up to date with your favorite news websites and blogs.
+url: https://mrericsir.github.io
+baseurl: /fang-website
+
+# Build settings
+markdown: kramdown
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE

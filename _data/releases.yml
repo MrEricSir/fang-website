@@ -1,0 +1,29 @@
+- version: "0.2.10-beta"
+  tag: "v0.2.10-beta.1"
+  date: 2026-01-15
+  changelog:
+    - text: "Option to select which feed(s) to add for web pages that publish more than one"
+    - text: "Reduce web view tearing"
+    - text: "Spinning arrow UI during slow web view requests"
+    - text: "Assign TCP ports dynamically"
+    - text: "Database optimizations"
+    - text: "Stability improvements"
+    - text: "[Internal] Split out <a href=\"https://github.com/MrEricSir/QSingleInstanceCheck/\">QSingleInstanceCheck</a> and <a href=\"https://github.com/MrEricSir/QSimpleStateMachine\">QSimpleStateMachine</a> into reusable libraries"
+    - text: "[Windows] Install to correct Program Files folder"
+
+- version: "0.2.9-beta"
+  tag: "v0.2.9-beta.1"
+  date: 2025-10-01
+  changelog:
+    - text: "Refreshed UI"
+    - text: "Feeds can be organized into folders"
+    - text: "Option to follow the system's light or dark mode"
+    - text: "System tray icon support on Windows"
+    - text: "Context menus for feeds"
+    - text: "More reliable web UI"
+    - text: "Support for automatically re-discovering feed URL if it changed on the server"
+    - text: "Ported to Qt 6"
+    - text: "New build system with packages for Windows, macOS, and Linux"
+    - text: "Fixed single instance check"
+    - text: "Numerous bugs and crashes fixed"
+    - text: "Unit tests and code coverage report added"
