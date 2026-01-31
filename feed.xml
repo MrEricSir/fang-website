@@ -8,7 +8,7 @@ layout: null
     <description>Release notes for Fang, an RSS feed reader.</description>
     <link>https://getfang.com/feed.xml/</link>
     <image>
-        <url>favicon.ico</url>
+        <url>static/favicon.ico</url>
         <title>Fang Releases</title>
         <link>https://getfang.com/feed.xml</link>
     </image>
