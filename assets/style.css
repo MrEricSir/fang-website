@@ -50,3 +50,7 @@ h2, summary {
   color: #aaa;
   font-style: italic;
 }
+
+.version-info {
+    padding-left: 40px;
+}
