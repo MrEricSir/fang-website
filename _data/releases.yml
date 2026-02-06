@@ -1,3 +1,14 @@
+- version: "0.2.11-beta"
+  tag: "v0.2.11-beta.1"
+  date: 2026-02-06
+  changelog:
+    - text: "Check for future updates"
+    - text: "Fixed sort order of news items in All News and folder feeds"
+    - text: "Preserve folder open/closed state"
+    - text: "Improved networking and offline support"
+    - text: "Added ability to filter log messages by type"
+    - text: "Various bug fixes and stability improvements"
+    
 - version: "0.2.10-beta"
   tag: "v0.2.10-beta.1"
   date: 2026-01-15
