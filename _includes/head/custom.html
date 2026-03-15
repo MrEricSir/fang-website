@@ -1,0 +1,161 @@
+<!-- start custom head snippets -->
+
+<!-- favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- RSS feed -->
+<link rel="alternate" type="application/rss+xml" title="Fang Releases" href="/feed.xml">
+
+<style>
+.floating-logo {
+  position: fixed;
+  top: -250px;
+  left: -150px;
+  z-index: 1000;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: #1e1e2e;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-logo:hover {
+  background: #f38ba8;
+  transform: scale(1.08);
+  box-shadow: 0 6px 32px rgba(243, 139, 168, 0.4);
+}
+
+.floating-logo img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 57px;
+  margin-right: 83px;
+  transition: transform 0.3s ease;
+}
+
+.floating-logo:hover img {
+  transform: scale(1.12);
+}
+
+#footer {
+  display: none;
+}
+
+.initial-content {
+  padding-bottom: 4em;
+}
+
+.hero-with-screenshot {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.hero-with-screenshot .hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-screenshot {
+  flex: 0 0 45%;
+  position: relative;
+}
+
+.hero-screenshot img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: opacity 0.4s ease;
+}
+
+.hero-screenshot__dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.hero-screenshot:hover .hero-screenshot__light {
+  opacity: 0;
+}
+
+.hero-screenshot:hover .hero-screenshot__dark {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .hero-with-screenshot {
+    flex-direction: column;
+  }
+
+  .hero-screenshot {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+.page__hero--overlay {
+  margin-bottom: 0;
+}
+
+.hero-wave {
+  display: block;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1.5em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/header-placeholder.png');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.features-section {
+  background: #eff1f5;
+  color: #4c4f69;
+  padding: 0 0 2.5em 0;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+.features-section h2,
+.features-section .archive__item-title {
+  color: #4c4f69;
+}
+
+.features-section .archive__item-excerpt {
+  color: #5c5f77;
+}
+
+.feature-smaller-image .archive__item-teaser img {
+  max-width: 75%;
+}
+
+.latest-version-section {
+  background: #181825;
+  padding: 2.5em 0;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+.latest-version-section .version-number {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #a6adc8;
+  margin-top: 0.25em;
+}
+</style>
+
+<!-- end custom head snippets -->

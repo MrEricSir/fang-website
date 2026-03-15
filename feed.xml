@@ -6,11 +6,11 @@ layout: null
   <channel>
     <title>Fang Releases</title>
     <description>Release notes for Fang, an RSS feed reader.</description>
-    <link>https://getfang.com/feed.xml/</link>
+    <link>https://getfang.com/</link>
     <image>
-        <url>static/favicon.ico</url>
+        <url>https://getfang.com/favicon.ico</url>
         <title>Fang Releases</title>
-        <link>https://getfang.com/feed.xml</link>
+        <link>https://getfang.com/</link>
     </image>
     <atom:link href="https://getfang.com/feed.xml" rel="self" type="application/rss+xml"/>
     {% for release in site.data.releases %}
@@ -23,15 +23,15 @@ layout: null
         <h2>Changelog</h2>
         <ul>
           {% for item in release.changelog %}
-          <li>{{ item.text }}</li>
+          <li>{{ item }}</li>
           {% endfor %}
         </ul>
         <h2>Downloads</h2>
         <ul>
-          <li><a href="https://github.com/MrEricSir/Fang/releases/download/{{ release.tag }}/Fang.msi">Windows</a></li>
-          <li><a href="https://github.com/MrEricSir/Fang/releases/download/{{ release.tag }}/Fang.dmg">macOS</a></li>
-          <li><a href="https://github.com/MrEricSir/Fang/releases/download/{{ release.tag }}/Fang.AppImage">Linux (AppImage)</a></li>
-          <li><a href="https://github.com/MrEricSir/Fang/archive/refs/tags/{{ release.tag }}.zip">Source code</a></li>
+          <li><a href="{{ release.downloads.windows }}">Windows</a></li>
+          <li><a href="{{ release.downloads.macos }}">macOS</a></li>
+          <li><a href="{{ release.downloads.linux }}">Linux (AppImage)</a></li>
+          <li><a href="{{ release.downloads.source }}">Source code</a></li>
         </ul>
       ]]></description>
     </item>

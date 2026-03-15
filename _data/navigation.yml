@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "Features"
+    url: /#features
+  - title: "Downloads"
+    url: /#latest-version
+  - title: "GitHub"
+    url: https://github.com/MrEricSir/Fang/
+  - title: "Bugs"
+    url: https://github.com/MrEricSir/Fang/issues

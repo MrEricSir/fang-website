@@ -1,0 +1,68 @@
+{% assign releases = site.data.releases %}
+{% assign latest = releases | where: "latest", true | first %}
+
+<div class="latest-version-section">
+  <h2 class="text-center" style="text-align: center;">Downloads</h2>
+  <p class="version-number" style="text-align: center;">Latest version: {{ latest.version }}</p>
+
+  <div class="feature__wrapper">
+    <div class="feature__item">
+      <div class="archive__item">
+        <div class="archive__item-body">
+          <h2 class="archive__item-title">Windows</h2>
+          <p><a href="{{ latest.downloads.windows }}" class="btn btn--primary">Download .msi</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="feature__item">
+      <div class="archive__item">
+        <div class="archive__item-body">
+          <h2 class="archive__item-title">macOS</h2>
+          <p><a href="{{ latest.downloads.macos }}" class="btn btn--primary">Download .dmg</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="feature__item">
+      <div class="archive__item">
+        <div class="archive__item-body">
+          <h2 class="archive__item-title">Linux</h2>
+          <p><a href="{{ latest.downloads.linux }}" class="btn btn--primary">Download AppImage</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p style="text-align: center;"><a href="{{ latest.downloads.source }}" class="btn btn--info">Source code</a></p>
+
+  <h3 style="text-align: center;">Changelog</h3>
+  <ul>
+    {% for item in latest.changelog %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<h2 style="text-align: center;">Previous Releases</h2>
+
+{% for release in releases %}
+  {% unless release.latest %}
+  <details>
+    <summary><strong>Fang {{ release.version }}</strong></summary>
+
+    <h4>Downloads</h4>
+    <p>
+      <a href="{{ release.downloads.windows }}" class="btn btn--small">Windows</a>
+      <a href="{{ release.downloads.macos }}" class="btn btn--small">macOS</a>
+      <a href="{{ release.downloads.linux }}" class="btn btn--small">Linux</a>
+      <a href="{{ release.downloads.source }}" class="btn btn--small">Source</a>
+    </p>
+
+    <h4>Changelog</h4>
+    <ul>
+      {% for item in release.changelog %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </details>
+  {% endunless %}
+{% endfor %}
