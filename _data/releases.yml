@@ -1,7 +1,25 @@
+- version: "0.3.0-beta"
+  tag: "v0.3.0-beta.1"
+  date: 2026-29-01
+  latest: true
+  changelog:
+    - "Updated UI"
+    - "New seearch feature"
+    - "Support for Google News feed format"
+    - "Support for JSON Feed format"
+    - "Option to start on user login"
+    - "System tray support on Linux"
+    - "Bugfixes and performance improvements"
+    - "[Internal] Code cleanup"
+  downloads:
+    windows: "https://github.com/MrEricSir/Fang/releases/download/v0.3.0-beta.1/Fang.msi"
+    macos: "https://github.com/MrEricSir/Fang/releases/download/v0.3.0-beta.1/Fang.dmg"
+    linux: "https://github.com/MrEricSir/Fang/releases/download/v0.3.0-beta.1/Fang.AppImage"
+    source: "https://github.com/MrEricSir/Fang/archive/refs/tags/v0.3.0-beta.1.zip"
+
 - version: "0.2.11-beta"
   tag: "v0.2.11-beta.1"
   date: 2026-03-01
-  latest: true
   changelog:
     - "Check for future updates"
     - "Fixed sort order of news items in All News and folder feeds"
